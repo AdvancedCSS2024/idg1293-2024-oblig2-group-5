@@ -1,169 +1,116 @@
 body {
-    background-color: rgb(249, 249, 242);
-  }
-  .svg-container {
-    height: 100vh; /* Adjust the height as needed */
-    position: relative;
-  }
-  #earth__blue,
-  #earth__patch{
-    stroke-miterlimit: 10;
-    stroke: #231f20;
-    stroke-width: 4.6px;
-  }
+  background-color: rgb(249, 249, 242);
+}
+main {
+  width: 100%; 
+  box-sizing: border-box; 
+  padding: 2px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-container {
+  border: 2px solid red;
+  position: relative;
+  width: 40vw; 
+  height: 100vh; 
+  min-width: 500px; 
+  min-height: 500px; 
+  overflow: auto;
+  margin: 0;
+}
 
-  #layer__white,
-  #layer__blue1,
-  #layer__blue--transperant,
-  #layer__orange,
-  #earth__blue,
-  #footer__white, 
-  #footer__blue,
-  #earth__patch{
-    width: 40vw;
-    height: auto;
-    position: absolute;
-    left: 32.5vw;
-    
-  }
+.svg-element {
+  position: absolute;
+  width: 100%; /* Adjust based on aspect ratio */
+  max-width: 100%;
+  display: block;
+  height: auto; /* Make SVG fully fill container height */
+  /*left: 50%; /* Center horizontally */
+  /*transform: translate(-50%, -50%); /* Center the element */
+}
+
 #layer__white {
-  fill: #fff;
-  top: 3vh;
+fill: #fff;
 }
 #layer__blue1 {
-    fill: #035ca7;
-    z-index: -1;
-    top: 6vh;
+  fill: #035ca7;
+  z-index: -1;
 }
 #layer__blue--transperant{
-    fill: #04b1dc;
-    isolation: isolate;
-    opacity: .15;
-    z-index: -2;
-    top: 20vh;
+  fill: #04b1dc;
+  isolation: isolate;
+  opacity: .15;
+  z-index: -2;
+  top: 9rem;
 }
 #layer__orange {
-    fill: #c87161;
-    isolation: isolate;
-    opacity: .38;
-    top: 52.3vh;
+  fill: #c87161;
+  isolation: isolate;
+  opacity: .38;
+  top: 25.6rem;
 }
 #earth__blue{
-    fill: #04b1dc;
-    top: 60vh;
+  fill: #04b1dc;
+  top: 30rem;
 } 
 #earth__patch{
-    fill: #a1cf6d;
-    top: 60vh;
+  fill: #a1cf6d;
+  top: 30rem;
+}
 
+#earth__blue,
+#earth__patch{
+stroke-miterlimit: 10;
+stroke: #231f20;
+stroke-width: 4.6px;
 }
-  #footer__white {
-    fill: #fff;
-    top: 92vh;
+
+@media screen and (max-width: 600px) {
+/* Ensure the parent container allows for proper layout */
+main {
+width: 100%; 
+box-sizing: border-box; 
+padding: 2px; 
 }
-  #footer__blue {
-    fill: #035ca7;
-    top: 94vh;
+
+.svg-container {
+width: 100%; 
+min-width: auto; 
+height: auto; 
+overflow: visible; 
 }
-#ntnu__logo {
-      fill: #fff;
-      stroke-width: 0px;
-      width: 10vw;
-      height: auto;
-      position: absolute;
-      bottom: 2.5vh;
+
+
+.svg-element {
+  max-width: 100%; 
 }
+
+#layer__white {
+top: 1%;
+}
+#layer__blue1 {
+ top: 4%;
+ z-index: -1;
+}
+#layer__blue--transperant {
+  top: 20%; 
+}
+
+#layer__orange {
+  top: 51%;
+}
+
+#earth__blue,
+#earth__patch {
+  top: 59%; 
+}
+}
+
+
+
+
+
+
+
   
-
-    @media screen and (min-width: 290px) and (max-width: 600px) {
-        /*.svg-container {
-            overflow-x: hidden;}*/
-        body {
-                background-color: rgb(252, 241, 227);
-              }    
-        #layer__white,
-        #layer__blue1,
-        #layer__blue--transperant,
-        #layer__orange,
-        #earth__blue,
-        #footer__white, 
-        #footer__blue {
-            width: 85vw; /* Adjust width to fit smaller screens */
-            left: 0; /* Reset left to 0 */
-            right: 0; /* Set right to 0 */
-            margin: 0 auto; /* Horizontally center the elements */
-            box-sizing: border-box;
-        }
-        #layer__orange {
-            top: 52.8vh;
-        }
-        #earth__blue {
-            top: 62vh;
-        } 
-        #footer__white {
-            top: 92vh;
-        }
-        #footer__blue {
-            top: 95vh;
-        }
-    }
-
-/* For tablets */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-     #layer__white,
-        #layer__blue1,
-        #layer__blue--transperant,
-        #layer__orange,
-        #earth__blue,
-        #footer__white, 
-        #footer__blue {
-            width: 65vw; /* Adjust width to fit smaller screens */
-            left: 0; /* Reset left to 0 */
-            right: 0; /* Set right to 0 */
-            margin: 0 auto; /* Horizontally center the elements */
-            box-sizing: border-box;
-        }
-        #layer__orange {
-            top: 52.8vh;
-        }
-        #earth__blue {
-            top: 62vh;
-        } 
-        #footer__white {
-            top: 92vh;
-        }
-        #footer__blue {
-            top: 95vh;
-        }
-}
-/* For small laptops or larger tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    #layer__white,
-    #layer__blue1,
-    #layer__blue--transperant,
-    #layer__orange,
-    #earth__blue,
-    #footer__white, 
-    #footer__blue {
-        width: 50vw; /* Adjust width to fit smaller screens */
-        left: 0; /* Reset left to 0 */
-        right: 0; /* Set right to 0 */
-        margin: 0 auto; /* Horizontally center the elements */
-        box-sizing: border-box;
-    }
-    #layer__orange {
-        top: 52.8vh;
-    }
-    #earth__blue {
-        top: 62vh;
-    } 
-    #footer__white {
-        top: 92vh;
-    }
-    #footer__blue {
-        top: 95vh;
-    }
-}
-
-  @media screen and (min-width: 1025px) {
-  }
