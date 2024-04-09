@@ -1,17 +1,8 @@
 body {
     background-color: rgb(249, 249, 242);
   }
-
-.earth__patch-text {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 500; 
-    font-style: normal;
-  }
-  
-
   .svg__container {
-    height: 100vw; /* Adjust the height as needed */
+    height: 100vh; /* Adjust the height as needed */
     position: relative;
   }
   #earth__blue,
@@ -83,13 +74,150 @@ body {
       bottom: 2.5vh;
 }
 
-#text1{
-    transform: translate(500px, 600px);
-    max-width: 13vh;
-    font-size: 14px;
-    position: sticky;
-}
+.moon{
+    width: 180px;
+    height: 180px;
+    background-color: #EBECEB ;
+    border-radius: 45% 55% 53% 47% / 41% 56% 44% 59%;
+    transform: translate(440%,60%);
+    overflow: hidden; 
+    border: solid black 5px;
+  }
+
+  .moon::before {
+    content: '';
+    position: absolute;
+    bottom: 36%; /* Adjust to move the smile up or down */
+    left: 56%;
+    width: 15%; /* Width of the smile */
+    height: 3%; /* Height of the smile, adjust to make the curve steeper or flatter */
+    border-radius: 50%/100% 100% 0 0; /* This creates a semi-circular shape, like a smile */
+    border: 3px solid black; /* Adjust the color and thickness of the smile line */
+    border-bottom: none; /* Hides the bottom border */
+    box-sizing: border-box;
+    rotate: 140deg;
+    border-left: 1px;
+  }
   
+
+  .crater {
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  width: 17%;
+  height: 12%;
+  background-color: #B4B7B8; 
+  border-radius: 81% 19% 86% 14% / 77% 25% 75% 23%;
+ border: solid black 2px;
+}
+.crater2 {
+    position: absolute;
+    right: 23%;
+    bottom: 12%;
+    width: 30px;
+    height: 30px;
+    background-color: #B4B7B8;
+    border-radius: 67% 33% 83% 25% / 65% 31% 69% 35% ;
+    border: solid black;
+  }
+
+  .crater3{
+    position: absolute;
+    right: 60%;
+    width: 30px;
+    height: 18px;
+    top: 82%;
+    background-color: #B4B7B8;
+    border-radius: 34% 66% 29% 71% / 42% 64% 36% 58% ;
+    border: solid black;
+  }
+
+  .crater4{
+    background-color: #B4B7B8;
+    border-radius: 55% 45% 56% 44% / 51% 59% 41% 49%;
+    border: solid black;
+    height: 25px;
+    width: 18px;
+    left: 85%;
+    top: 45%;
+    position: absolute;
+  }
+
+  .crater5{
+ 
+    background-color: #B4B7B8;
+    border-radius:  29% 58% 21% 50% / 18% 74% 27% 62% ;
+    border: solid black;
+    height: 25px;
+    width: 18px;
+    left: 10px;
+    right: 85%;
+    top: 50%;
+    position: absolute; 
+  }
+
+  .moon__eyes-left{
+    background-color: black;
+    border-radius: 48% 52% 50% 48% / 45% 53% 31% 34%;
+    height: 60px;
+    width: 40px;
+    top: 24%;
+    left: 20%;
+    position: absolute;
+  }
+
+  .moon__eyes-right{
+    background-color: black;
+   border-radius: 48% 52% 44% 56% / 68% 69% 24% 25% ;
+   height: 35%;
+   width: 25%;
+   top: 20%;
+   left: 54%;
+   position: absolute;
+  }
+  .moon__eyes-left-white1{
+    border-radius: 55% 84% 53% 84% / 22% 69% 30% 76% ;
+    background-color: white;
+    width: 58%;
+    height: 30%;
+    position: absolute;
+    left:22%;
+    top:10%;
+    rotate: 180deg;
+  }
+
+  .moon__eyes-left-white2{
+    border-radius: 78% 22% 37% 67% / 47% 11% 80% 53% ;
+    background-color: white;
+    width: 64%;
+    height: 30%;
+    position: absolute;
+    left:22%;
+    top:60%;
+  }
+
+  .moon__eyes-right-white1{
+    border-radius: 51% 49% 51% 49% / 37% 34% 66% 63%;
+    background-color: white;
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    left:22%;
+    top:10%;
+    rotate: 180deg
+  }
+
+  .moon__eyes-right-white2{
+    border-radius: 68% 23% 41% 30% / 53% 19% 68% 40%  ;
+    background-color: white;
+    width: 65%;
+    height: 30%;
+    position: absolute;
+    left:22%;
+    top:60%;
+    rotate: 180deg
+  }
+
 
     @media screen and (min-width: 290px) and (max-width: 600px) {
         /*.svg-container {
@@ -123,6 +251,10 @@ body {
             top: 95vh;
         }
     }
+
+
+          
+    
 
 /* For tablets */
 @media screen and (min-width: 601px) and (max-width: 768px) {
