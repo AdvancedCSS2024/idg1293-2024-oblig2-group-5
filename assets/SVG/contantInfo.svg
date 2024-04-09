@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.51 35.73">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Marydale-Bold, Marydale;
+        font-size: 25.36px;
+        font-weight: 700;
+      }
+
+      .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-4">
+      <g class="cls-4">
+        <text class="cls-3" transform="translate(0 21.56)"><tspan class="cls-6" x="0" y="0">K</tspan><tspan class="cls-5" x="15.82" y="0">on</tspan><tspan class="cls-2" x="35" y="0">t</tspan><tspan x="44.28" y="0">akt: </tspan><tspan class="cls-10" x="94.64" y="0">c</tspan><tspan x="107.2" y="0">ar</tspan><tspan class="cls-7" x="127.08" y="0">l</tspan><tspan x="132.4" y="0">os.vi</tspan><tspan class="cls-9" x="174.22" y="0">c</tspan><tspan class="cls-8" x="185.71" y="0">i</tspan><tspan x="191.34" y="0">ent@ntn</tspan><tspan class="cls-1" x="267.49" y="0">u</tspan><tspan x="275.48" y="0">.no</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
