@@ -73,27 +73,39 @@ body {
       position: absolute;
       bottom: 2.5vh;
 }
-
-.moon{
-    width: 180px;
-    height: 180px;
-    background-color: #EBECEB ;
+.moon {
+    width: 13vw;
+    height: 13vw;
+    background-color: #EBECEB;
     border-radius: 45% 55% 53% 47% / 41% 56% 44% 59%;
-    transform: translate(440%,60%);
-    overflow: hidden; 
+    transform: translate(5vw, 6.5vw) scale(1); 
+    overflow: hidden;
     border: solid black 5px;
+    position: relative;
+    animation: spinMoon 5s infinite alternate ease-in-out; 
+}
+  
+  @keyframes spinMoon {
+    0%, 100% {
+      transform: translate(57vw, 6.5vw) scale(1)  rotate(-20deg);; 
+    }
+    50% {
+      transform: translate(57vw, 6.5vw) scale(1) rotate(20deg); 
+    }
   }
+    
+  
 
   .moon::before {
     content: '';
     position: absolute;
-    bottom: 36%; /* Adjust to move the smile up or down */
-    left: 56%;
-    width: 15%; /* Width of the smile */
-    height: 3%; /* Height of the smile, adjust to make the curve steeper or flatter */
-    border-radius: 50%/100% 100% 0 0; /* This creates a semi-circular shape, like a smile */
-    border: 3px solid black; /* Adjust the color and thickness of the smile line */
-    border-bottom: none; /* Hides the bottom border */
+    bottom: 32%; 
+    left: 55%;
+    width: 2vw; 
+    height: 0.6vw; 
+    border-radius: 50%/100% 100% 0 0; 
+    border: 0.3vw solid black; 
+    border-bottom: none; 
     box-sizing: border-box;
     rotate: 140deg;
     border-left: 1px;
@@ -104,18 +116,18 @@ body {
   position: absolute;
   left: 25%;
   top: 2%;
-  width: 17%;
-  height: 12%;
+  width: 2vw;
+  height: 2vw;
   background-color: #B4B7B8; 
   border-radius: 81% 19% 86% 14% / 77% 25% 75% 23%;
  border: solid black 2px;
 }
 .crater2 {
     position: absolute;
-    right: 23%;
+    right: 12%;
     bottom: 12%;
-    width: 30px;
-    height: 30px;
+    width: 2.2vw;
+    height: 2.4vw;
     background-color: #B4B7B8;
     border-radius: 67% 33% 83% 25% / 65% 31% 69% 35% ;
     border: solid black;
@@ -124,9 +136,9 @@ body {
   .crater3{
     position: absolute;
     right: 60%;
-    width: 30px;
-    height: 18px;
-    top: 82%;
+    width: 2.4vw;
+    height: 1.5vw;
+    top: 80%;
     background-color: #B4B7B8;
     border-radius: 34% 66% 29% 71% / 42% 64% 36% 58% ;
     border: solid black;
@@ -136,8 +148,8 @@ body {
     background-color: #B4B7B8;
     border-radius: 55% 45% 56% 44% / 51% 59% 41% 49%;
     border: solid black;
-    height: 25px;
-    width: 18px;
+    height: 2vw;
+    width: 1.5vw;
     left: 85%;
     top: 45%;
     position: absolute;
@@ -148,19 +160,19 @@ body {
     background-color: #B4B7B8;
     border-radius:  29% 58% 21% 50% / 18% 74% 27% 62% ;
     border: solid black;
-    height: 25px;
-    width: 18px;
-    left: 10px;
+    height: 2vw;
+    width: 1.8vw;
+    left: 4%;
     right: 85%;
-    top: 50%;
+    top: 51%;
     position: absolute; 
   }
 
   .moon__eyes-left{
     background-color: black;
     border-radius: 48% 52% 50% 48% / 45% 53% 31% 34%;
-    height: 60px;
-    width: 40px;
+    height: 5vw;
+    width: 3vw;
     top: 24%;
     left: 20%;
     position: absolute;
@@ -169,8 +181,8 @@ body {
   .moon__eyes-right{
     background-color: black;
    border-radius: 48% 52% 44% 56% / 68% 69% 24% 25% ;
-   height: 35%;
-   width: 25%;
+   height: 5vw;
+   width: 3.3vw;
    top: 20%;
    left: 54%;
    position: absolute;
@@ -217,6 +229,10 @@ body {
     top:60%;
     rotate: 180deg
   }
+
+  
+ 
+  
 
 
     @media screen and (min-width: 290px) and (max-width: 600px) {

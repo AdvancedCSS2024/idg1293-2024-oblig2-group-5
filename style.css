@@ -84,10 +84,10 @@ body {
 }
 
 #text1{
-    transform: translate(500px, 600px);
+    transform: translate(35vw, 39vw);
     max-width: 13vh;
     font-size: 14px;
-    position: sticky;
+    position: relative;
 }
   
 
