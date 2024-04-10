@@ -79,8 +79,8 @@ top: 0;
   fill: black;
   stroke-width: 0px;
   z-index: 15;
-  width: 20%;
-  bottom: 10em;
+  width: 15%;
+  top: 546.5%;
 }
 #human__yellow{
   width: 26%;
