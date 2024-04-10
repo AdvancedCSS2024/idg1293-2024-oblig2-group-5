@@ -1,4 +1,21 @@
 body {
+
+  background-color: rgb(249, 249, 242);
+}
+.svg-container{
+  position: relative;
+  border: 2px solid red;
+  height:auto;
+  width: 100%;
+  max-width: 40%;
+}
+svg {
+  position: absolute;
+  width: 100%;
+  /*top: 10%;*/
+  height: auto;
+}
+
     background-color: rgb(249, 249, 242);
   }
 
@@ -21,68 +38,112 @@ body {
     stroke: #231f20;
     stroke-width: 4.6px;
   }
+main
 
-  #layer__white,
-  #layer__blue1,
-  #layer__blue--transperant,
-  #layer__orange,
-  #earth__blue,
-  #footer__white, 
-  #footer__blue,
-  #earth__patch{
-    width: 40vw;
-    height: auto;
-    position: absolute;
-    left: 32.5vw;
-    
-  }
 #layer__white {
-  fill: #fff;
-  top: 3vh;
+fill: #fff;
+top: 0;
 }
 #layer__blue1 {
-    fill: #035ca7;
-    z-index: -1;
-    top: 6vh;
+  fill: #035ca7;
+  top: 5%;
+  z-index: -1;
 }
+#star__large {
+  fill: #f4ec48;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 4.6px;
+  width: 6%;
+  right: 9%;
+  top: 60%;
+  }
+
+  #star__small {
+    fill: #f4ec48;
+    stroke: #231f20;
+    stroke-miterlimit: 10;
+    stroke-width: 4.6px;
+    width: 5%;
+    right: 3%;
+    top: 85%;
+  }
+
 #layer__blue--transperant{
-    fill: #04b1dc;
-    isolation: isolate;
-    opacity: .15;
-    z-index: -2;
-    top: 20vh;
+  fill: #04b1dc;
+  isolation: isolate;
+  opacity: .15;
+  z-index: -2;
+  top: 9rem;
 }
 #layer__orange {
-    fill: #c87161;
-    isolation: isolate;
-    opacity: .38;
-    top: 52.3vh;
+  fill: #c87161;
+  isolation: isolate;
+  opacity: .38;
+  top: 25.6rem;
 }
 #earth__blue{
-    fill: #04b1dc;
-    top: 60vh;
+  fill: #04b1dc;
+  top: 30rem;
 } 
 #earth__patch{
-    fill: #a1cf6d;
-    top: 60vh;
+  fill: #a1cf6d;
+  top: 30rem;
+}
+#footer__white{
+  fill: white;
+  top: 46.5rem;
+  z-index: 1;
+}
+#footer__blue{
+  fill: #035ca7;
+  top: 47.7rem;
+  z-index: 1;
+}
+#ntnu__logo{
+  fill: black;
+  stroke-width: 0px;
+  z-index: 15;
+  width: 15%;
+  top: 546.5%;
+}
+#human__yellow{
+  width: 26%;
+  top: 24.5rem;
+}
+#human__blue{
+  width: 24%;
+  top: 20rem;
+  left: 34%
+}
+#human__green{
+  width: 24%;
+  top: 22rem;
+  left: 58%
+}
 
+#eyes{
+  width: 70%;
+  top: 41rem;
+  left: 12%;
 }
-  #footer__white {
-    fill: #fff;
-    top: 92vh;
+.eyes__black{
+  stroke: #231f20;
+  stroke-miterlimit: 10;
 }
-  #footer__blue {
-    fill: #035ca7;
-    top: 94vh;
+.eyes__white {
+  fill: #fff;
 }
-#ntnu__logo {
-      fill: #fff;
-      stroke-width: 0px;
-      width: 10vw;
-      height: auto;
-      position: absolute;
-      bottom: 2.5vh;
+
+
+#earth__blue,
+#earth__patch{
+stroke-miterlimit: 10;
+stroke: #231f20;
+stroke-width: 4.6px;
 }
+
+
 
 #text1{
     transform: translate(35vw, 39vw);
@@ -91,96 +152,128 @@ body {
     position: relative;
 }
   
+ main
 
-    @media screen and (min-width: 290px) and (max-width: 600px) {
-        /*.svg-container {
-            overflow-x: hidden;}*/
-        body {
-                background-color: rgb(252, 241, 227);
-              }    
-        #layer__white,
-        #layer__blue1,
-        #layer__blue--transperant,
-        #layer__orange,
-        #earth__blue,
-        #footer__white, 
-        #footer__blue {
-            width: 85vw; /* Adjust width to fit smaller screens */
-            left: 0; /* Reset left to 0 */
-            right: 0; /* Set right to 0 */
-            margin: 0 auto; /* Horizontally center the elements */
-            box-sizing: border-box;
-        }
-        #layer__orange {
-            top: 52.8vh;
-        }
-        #earth__blue {
-            top: 62vh;
-        } 
-        #footer__white {
-            top: 92vh;
-        }
-        #footer__blue {
-            top: 95vh;
-        }
-    }
 
-/* For tablets */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-     #layer__white,
-        #layer__blue1,
-        #layer__blue--transperant,
-        #layer__orange,
-        #earth__blue,
-        #footer__white, 
-        #footer__blue {
-            width: 65vw; /* Adjust width to fit smaller screens */
-            left: 0; /* Reset left to 0 */
-            right: 0; /* Set right to 0 */
-            margin: 0 auto; /* Horizontally center the elements */
-            box-sizing: border-box;
-        }
-        #layer__orange {
-            top: 52.8vh;
-        }
-        #earth__blue {
-            top: 62vh;
-        } 
-        #footer__white {
-            top: 92vh;
-        }
-        #footer__blue {
-            top: 95vh;
-        }
-}
-/* For small laptops or larger tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    #layer__white,
-    #layer__blue1,
-    #layer__blue--transperant,
-    #layer__orange,
-    #earth__blue,
-    #footer__white, 
-    #footer__blue {
-        width: 50vw; /* Adjust width to fit smaller screens */
-        left: 0; /* Reset left to 0 */
-        right: 0; /* Set right to 0 */
-        margin: 0 auto; /* Horizontally center the elements */
-        box-sizing: border-box;
-    }
-    #layer__orange {
-        top: 52.8vh;
-    }
-    #earth__blue {
-        top: 62vh;
-    } 
-    #footer__white {
-        top: 92vh;
-    }
-    #footer__blue {
-        top: 95vh;
-    }
-}
-
-  @media screen and (min-width: 1025px) {
+@media screen and (max-width: 600px){
+  svg{
+    width: 100%;
+    left: 0%;
+    right: 0.5%;
   }
+  #footer__blue{
+    fill: #035ca7;
+    top: 48rem;
+  }
+  #footer__white{
+    fill: white;
+    top: 46.5rem;
+  }
+}
+
+/*common for humans*/
+    .balck_c1, .head_c2, .hand_c4, .shirt_c5, .hand_c2, .face_c2, .green_pantc3, .tshirt__green, .pants, .black {
+      stroke: #231f20;
+    }
+    .balck_c1, .head_c2, .green_pantc3, .hand_c4, .shirt_c5, .phono__logo, .face_c2, .tshirt__green, .pants, .black, .hand_c2{
+      stroke-miterlimit: 10;
+      stroke-width: 4.6px;
+    }
+    .phono__logo {
+      fill: none;
+      stroke: #fff;
+    }
+    .cls-8 {
+      fill: #fff; /*eyes*/
+    }
+    /*human1*/
+    .balck_c1, .cls-7, .black{
+      fill: #231f20;
+    }
+    .head_c2{
+      fill: #b7a79f;
+    }
+    .green_pantc3, .tshirt__green {
+      fill: #a0cf6e;
+    }
+    .hand_c4{
+      fill: #ad9282;
+    }
+    .shirt_c5, .pants {
+      fill: #f4ec48;
+    }
+    .cls-8{
+      stroke-width: 0px;
+    }
+    /*human 2*/
+    .shirt__blue {
+      fill: #04b1dc;
+    }
+    .hand_c2, .face_c2 {
+      fill: #fce0ce;
+    }
+    .skirt{ /*skirt*/
+      fill: #c87161;
+    }
+  
+/*human 3*/
+.face, .hand {
+  fill: #826d5e;
+}
+
+ 
+    /* HEADER + text*/
+    header{
+      font-size: 36px;
+      font-weight: 700;
+      color: #035ca7;
+      z-index: 5;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif
+    }
+    header span {
+      color: #0da15c;
+    }
+    .header__undertext{
+      color: #231f20;
+      font-size: 12px;
+      font-family: "Marydale-Bold", "Marydale";
+    }
+    .layer__blue-text{
+      font-size: 12px;
+      font-family: "Marydale-Bold", "Marydale";
+      font-weight: bold;
+      color: black;
+      position: absolute;
+      z-index: 14;
+      top: 120%;
+      left: 3%;
+    }
+    #underneath__text{
+      top: 130%;
+    }
+    .footer__white-text1,
+    .footer__white-text2{
+      font-family: "Marydale-Bold", "Marydale";
+      font-size: 7.6px;
+      position: absolute;
+      z-index: 7;
+    }
+    .footer__white-text1{
+      top: 46rem;
+    }
+    .footer__white-text2{
+      top: 46.5rem;
+    }
+    .layer__transperantBlue-undertext{
+      position: absolute;
+      top: 160%;
+      font-family: "Marydale-Bold", "Marydale";
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .layer__transperantBlue-undertext span{
+      font-size: 40px;
+    }
+  
+  
