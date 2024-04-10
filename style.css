@@ -21,6 +21,7 @@ top: 0;
 }
 #layer__blue1 {
   fill: #035ca7;
+  top: 5%;
   z-index: -1;
 }
 #star__large {
