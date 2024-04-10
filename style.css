@@ -1,9 +1,7 @@
 body {
-
+  font-family: "Marydale-Bold", "Marydale";
   background-color: rgb(249, 249, 242);
 }
-
-
 
 .svg-container{
   position: relative;
@@ -123,7 +121,53 @@ top: 0;
   top: 22rem;
   left: 58%
 }
-
+.bckg__color-car{
+  fill: #c87161;
+}
+#car{
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  top: 167%;
+}
+#ntnu__logo{
+  fill: #fff;
+  stroke-width: 0px;
+  z-index: 10;
+  width: 15%;
+  top: 575%;
+  left: 4%;
+}
+.footer__blue-text{
+  position: absolute;
+  font-family: "Marydale-Bold", "Marydale";
+  z-index: 16;
+  width: 15%;
+  top: 565%;
+  left: 60%;
+  font-size: 7.6px;
+  color: #fff;
+}
+.footer__blue-link{
+  color: #fff;
+  position: absolute;
+  font-family: "Marydale-Bold", "Marydale";
+  z-index: 16;
+  width: 100%;
+  top: 570%;
+  left: 36%;
+  font-size: 7.6px;
+}
+.footer__blue-contant{
+  position: absolute;
+  font-family: "Marydale-Bold", "Marydale";
+  z-index: 16;
+  width: 15%;
+  top: 569%;
+  left: 80%;
+  font-size: 7.6px;
+  color: #fff;
+}
 #eyes{
   width: 70%;
   top: 41rem;
@@ -136,6 +180,76 @@ top: 0;
 .eyes__white {
   fill: #fff;
 }
+.QR-code{
+  position: absolute;
+  max-width: 10%;
+  top: 80%;
+}
+.cloud-small-green{
+  max-width: 5%;
+  position: absolute;
+}
+#cloud1{
+  top: 47%;
+  left: 1%;
+}
+#cloud2{
+  top: 45%;
+  left: 20%;
+}
+#cloud3{
+  top: 50%;
+  left: 27%;
+}
+#cloud4{
+  top: 41%;
+  left: 28.5%;
+}
+#cloud5{
+  top: 36.6%;
+  left: 40%;
+}
+#cloud6{
+  top: 42%;
+  left: 70%;
+}
+#cloud7{
+  top: 50%;
+  left: 80%;
+}
+#cloud8{
+  top: 40%;
+  left: 80%;
+}
+.cloud__bckg--green {
+  fill: #a0cf6e;
+}
+.cls-1, .cls-2 {
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
+.cls-2 {
+  fill: #fff;
+  stroke-width: 4.6px;
+}
+#cloud__medium-green{
+  position: absolute;
+  width: 6.5%;
+  top: 240%;
+  left: 72%;
+}
+#cloud__medium-green1{
+  position: absolute;
+  width: 6.5%;
+  top: 260%;
+  left: 20%;
+}
+#cloud__large{
+  position: absolute;
+  width: 10%;
+  top: 250%;
+  left: 55%;
+}
 
 
 #earth__blue,
@@ -145,7 +259,36 @@ stroke: #231f20;
 stroke-width: 4.6px;
 }
 
-
+#text0, #text2, #text3, #text4, #text5 {
+  position: absolute;
+  font-size: 10px;
+  width: 10ch;
+}
+#text0{
+  top: 500%;
+  left: 11%;
+}
+#text2{
+  top: 460%;
+  left: 44%;
+}
+#text3{
+  top: 610%;
+  left: 43.4%;
+}
+#text4{
+  top: 500%;
+  left: 86%;
+}
+#text5{
+  top: 150%;
+  left: 20%;
+}
+.design{
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+}
 #text1{
     transform: translate(35vw, 39vw);
     max-width: 13vh;
