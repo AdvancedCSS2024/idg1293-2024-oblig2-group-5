@@ -1,6 +1,7 @@
 body {
   font-family: "Marydale-Bold", "Marydale";
   background-color: rgb(249, 249, 242);
+  margin-right: 0;
 }
 
 .svg-container{
@@ -38,7 +39,6 @@ svg {
     stroke: #231f20;
     stroke-width: 4.6px;
   }
-main
 
 #layer__white {
 fill: #fff;
